@@ -1,0 +1,16 @@
+word = input().strip()
+                  
+word.lower()
+z_count=0
+o_count=0
+for char in word:
+    if char == 'z':
+        z_count +=1
+    elif char == 'o':
+        o_count +=1
+    else:
+        exit()
+if z_count * 2== o_count:
+    print('Yes') 
+else:
+    print('No')       
