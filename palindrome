@@ -1,0 +1,17 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        rev=0
+        n=x
+        while x>0:
+            rem=x%10
+            rev=rev*10+rem
+            x/=10
+        if n==rev:
+            return True
+        else:
+            return False
+Solution_ob=Solution()
+x=121
+result = Solution_ob.isPalindrome(x)
+print(result)
+        
